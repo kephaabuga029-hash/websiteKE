@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Stock Pick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .title {
+            height: 160px;
+            text-align: center;
+            vertical-align: top;
+            font-family: "Times New Roman", serif;
+            font-size: 50px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .title hr {
+            margin-top: 50px;
+            border: 2px solid #aaa;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .green {
+            background-color: #00b050;
+            color: red;
+        }
+
+        .name-heading {
+            font-weight: bold;
+            color: red;
+        }
+
+        .company {
+            font-size: 25px;
+        }
+
+        .images {
+            text-align: center;
+            vertical-align: bottom;
+            font-size: 20px;
+        }
+
+        .product-image {
+            width: 240px;
+            height: 175px;
+            object-fit: contain;
+        }
+
+        .contact {
+            font-size: 23px;
+            color: #222;
+        }
+
+        .contact a {
+            color: blue;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            font-style: italic;
+            color: #222;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<table>
+    <!-- Title -->
+    <tr>
+        <td colspan="4" class="title">
+            My tech stock pick
+            <hr>
+        </td>
+    </tr>
+
+    <!-- Column headings -->
+    <tr>
+        <td class="blue" width="20%"></td>
+        <td class="green" width="11%">Symbol</td>
+        <td class="blue images" rowspan="2" width="26%">
+            Images
+        </td>
+        <td class="green" width="43%">Contact</td>
+    </tr>
+
+    <!-- Name heading -->
+    <tr>
+        <td class="name-heading">Name</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <!-- Microsoft row -->
+    <tr>
+        <td class="company">Microsoft</td>
+        <td class="company">MSFT</td>
+
+        <td class="images">
+            <img
+                src="C:\Users\HP\OneDrive\Desktop\my pictures\facebook\1750315692566.jpg"
+                alt="HP laptop"
+                class="product-image"
+            >
+        </td>
+
+        <td class="contact">
+            <ul>
+                <li>
+                    <a href="mailto:microsofti@mc.se">Email:</a>
+                    microsofti@mc.se
+                </li>
+                <li>
+                    ©2013 <strong>Microsoft</strong> Corporation
+                </li>
+            </ul>
+
+            <ol type="i">
+                <li>Email: microsofti@mc.se</li>
+                <li>©2026 <strong>Microsoft</strong> Corporation</li>
+            </ol>
+        </td>
+    </tr>
+
+    <!-- Cisco Systems row -->
+    <tr>
+        <td class="company">Cisco Systems</td>
+        <td class="company">CSCO</td>
+
+        <td class="images" rowspan="2">
+            <img
+                src="C:\Users\HP\OneDrive\Desktop\my pictures\facebook\1750315713048.jpg"
+                alt="Cisco network switch"
+                class="product-image"
+            >
+        </td>
+
+        <td>
+            <strong>Switch</strong>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+
+        <td>
+            <a href="https://www.uk.hardware.info">
+                www.uk.hardware.info
+            </a>
+        </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+        <td colspan="4" class="footer">
+            ©BIT 202
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

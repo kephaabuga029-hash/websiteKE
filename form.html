@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 780px;
+            max-width: 95%;
+            margin: 10px auto;
+        }
+
+        fieldset {
+            border: 2px solid #b6d5f5;
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            text-align: center;
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 200px 245px;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+
+        label {
+            font-weight: normal;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            height: 40px;
+            box-sizing: border-box;
+            border: 2px solid #b6d5f5;
+            border-radius: 5px;
+            padding: 7px;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        .gender {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gender input {
+            width: 20px;
+            height: 20px;
+        }
+
+        .security {
+            width: 470px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .security .form-row {
+            grid-template-columns: 160px 245px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #299bd8;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            margin: 0 4px;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #167bb5;
+        }
+
+        @media (max-width: 550px) {
+            .form-row,
+            .security .form-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .security {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <form action="#" method="post">
+
+        <!-- PERSONAL INFORMATION -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+                <label for="surname">Sur Name</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+
+            <div class="form-row">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname">
+            </div>
+
+            <div class="form-row">
+                <label for="othernames">Other Names</label>
+                <input type="text" id="othernames" name="othernames">
+            </div>
+
+            <div class="form-row">
+                <label>Gender</label>
+                <div class="gender">
+                    <input type="radio" id="male"
+                           name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female"
+                           name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="marital">Marital Status</label>
+                <select id="marital" name="marital">
+                    <option value="">Select - Status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                    <option>Widowed</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-row">
+                <label for="birthplace">Place of Birth</label>
+                <input type="text" id="birthplace" name="birthplace">
+            </div>
+
+            <div class="form-row">
+                <label for="mother">Mothers Name</label>
+                <input type="text" id="mother" name="mother">
+            </div>
+
+            <div class="form-row">
+                <label for="father">fathers Name</label>
+                <input type="text" id="father" name="father">
+            </div>
+
+            <div class="form-row">
+                <label for="dependants">number of Dependants</label>
+                <select id="dependants" name="dependants">
+                    <option value="">Select - No of Dependants</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="education">level of Education</label>
+                <input type="text" id="education" name="education">
+            </div>
+        </fieldset>
+
+        <!-- SECURITY INFORMATION -->
+        <fieldset class="security">
+            <legend>Security Information</legend>
+
+            <div class="form-row">
+                <label for="username">UserName</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-row">
+                <label for="confirm">Re-type Password</label>
+                <input type="password" id="confirm" name="confirm">
+            </div>
+
+            <div class="form-row">
+                <label for="question">Security Question</label>
+                <select id="question" name="question">
+                    <option value="">Select - Question</option>
+                    <option>What is your mother's maiden name?</option>
+                    <option>What is your favourite colour?</option>
+                    <option>What was the name of your first school?</option>
+                    <option>What is your favourite food?</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="answer">Answer</label>
+                <input type="text" id="answer" name="answer">
+            </div>
+        </fieldset>
+
+        <!-- NAVIGATION BUTTONS -->
+        <div class="buttons">
+            <button type="button" onclick="history.back()">
+                Previous
+            </button>
+
+            <button type="button"
+                    onclick="alert('Next page can be added here.')">
+                Next
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
